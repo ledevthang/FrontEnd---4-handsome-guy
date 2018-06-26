@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test file Js</title>
+</head>
+<body>
+    <h1>Trường hợp cùng chung file HTML</h1>
+    <p id="demo">You Only Live Once</p>
+    <button onclick="aaa()">Change</button>
+    <p id="demo2">You Only Live Once</p>
+    <button onclick="xxx()">Change</button>
+    <script>
+        var str = "Sai cmnr!";
+
+
+        function aaa() {
+            document.getElementById("demo").innerHTML = concua_aaa;
+        }
+
+
+
+        function xxx() {
+            document.getElementById("demo2").innerHTML = concua_aaa; /*Lỗi undefined nếu để lệnh này*/
+//            document.getElementById("demo2").innerHTML = "Không thể nhận giá trị của hàm khác. " + str;
+
+        }
+        var concua_aaa = "Yolo";
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test JavaScript (Scope)</title>
+</head>
+<body>
+    <h1>Javascript Scope</h1>
+    <p>Biến cục bộ được khai báo trong hàm myFunction không thể sử dụng ở ngoài</p>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <br />
+    <p id="demo3"></p>
+    <script>
+//        "use strict";  /* Nếu sử dụng strict mode sẽ gây bug, do string1 không được khai báo*/
+
+        function myFunction() {
+            var string = "66767";
+            document.getElementById("demo").innerHTML = "Kiểu biến là: " + typeof string;
+        }
+        myFunction();
+
+//
+//myFunction1();
+//        document.getElementById("demo3").innerHTML = "You Only Live Once viết tắt là: " +  string1;
+//        function myFunction1() {
+//            string1 = "Yolo";
+//        }
+//        document.getElementById("demo2").innerHTML = "xxxxxxxxxxx: " +  typeof string1;
+//
+
+    </script>
+</body>
+</html>
