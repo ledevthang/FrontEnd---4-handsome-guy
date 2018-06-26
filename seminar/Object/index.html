@@ -6,13 +6,62 @@
 </head>
 <body>
 	<div class="container">
-		<div class="menu">
-			<a href="#"><div>Cách khởi tạo object</div></a>
-			<a href="#"><div>Tạo thuộc tính</div></a>
-			<a href="#"><div>Từ khóa this</div></a>
-			<a href="#"><div>Object methods</div></a>
-			<a href="#"><div>Truy cập và gán giá trị</div></a>
-			<a href="#"><div>Mảng chứa đối tượng - Đối tượng chứa đối tượng</div></a>
+		<div class="big">
+			<p style="width: 16.666%" class="cap">Menu</p>
+			<div class="menu">
+				<a href="#step1"><div >Cách khởi tạo object</div></a>
+				<a href="#step2"><div>Tạo thuộc tính</div></a>
+				<a href="#step3"><div>Từ khóa this</div></a>
+				<a href="#"><div>Object methods</div></a>
+				<a href="#"><div>Truy cập và gán giá trị</div></a>
+				<a href="#"><div>Mảng chứa đối tượng - Đối tượng chứa đối tượng</div></a>
+			</div>
+		</div>
+		<div class="content">
+			<div id="step1" class="step" >
+				<p style="margin: 0" class="cap">Cách khởi tạo object</p>
+				<p>Co 2 cach de khoi tao:</p>
+				<p><b>Cach 1</b>. Su dung tu khoa <span>new Object()</span>:</p>
+				<p class="zone"><span>var</span> obj = <span>new</span> Object();</p>
+				<p><b>Cach 2</b>. Su dung tu khoa <span>{}</span>:</p>
+				<p class="zone"><span>var</span> obj = <span>{}</span>;</p>
+			</div>
+			<div id="step2" class="step">
+				<p class="cap">Tạo thuộc tính</p>
+				<p>Thuộc tính là những đặc điểm (có thể hiểu là biến) cần lưu trữ trong đối tượng.</p>
+				<p>Ta co the khai bao bang 3 cach</p>
+				<p><b>Cách 1</b>. Sử dụng từ khóa <span>new Object()</span>:</p>
+				<p class="zone">
+					<span>var</span> Conmeo = <span>new Object();</span><br>
+					// Tạo thuộc tính<br>
+						Conmeo.duoi = '';<br>
+						Conmeo.tai = '';<br>
+						Conmeo.mat = '';<br>
+						Conmeo.long = '';<br></p>
+				<p><b>Cách 2</b>. Sử dụng từ khóa <span>{}</span> và thêm thuộc tính ngay lúc khai báo:</p>
+				<p class="zone">
+						<span>var</span> Conmeo = <span>{</span><br>
+						    duoi : "",<br>
+						    tai : "",<br>
+						    mat : "",<br>
+						    long : ""<br>
+						<span>};</span></p>
+				<p><b>Cách 3</b>. Sử dụng từ khóa <span>{}</span> và thêm thuộc tính ngay sau do:</p>
+				<p class="zone">
+						<span>var</span> Conmeo = <span>{};</span><br>
+					Conmeo.duoi : "",;<br>
+					Conmeo.tai : "",;<br>
+					Conmeo.mat : "",;<br>
+					Conmeo.long : "";<br></p>
+			</div>
+			<div id="step3" class="step">
+				<p class="cap">Từ khóa this</p>
+				<p>Co 2 cach de khoi tao:</p>
+				<p><b>Cach 1</b>. Su dung tu khoa <span>new Object()</span>:</p>
+				<p class="zone"><span>var</span> obj = <span>new</span> Object();</p>
+				<p><b>Cach 2</b>. Su dung tu khoa <span>{}</span>:</p>
+				<p class="zone"><span>var</span> obj = <span>{}</span>;</p>
+			</div>
 		</div>
 	</div>
 </body>
