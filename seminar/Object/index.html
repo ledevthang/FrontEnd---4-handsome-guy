@@ -14,10 +14,12 @@
 				<a href="#step2"><div>Tạo thuộc tính</div></a>
 				<a href="#step3"><div>Từ khóa this</div></a>
 				<a href="#step4"><div>Truy cập và gán giá trị</div></a>
-				<a href="#step5"><div>Mảng chứa đối tượng - Đối tượng chứa đối tượng</div></a>
+				<a href="#step5"><div>Object Method</div></a>
+				<a href="#step6"><div>Mảng chứa đối tượng - Đối tượng chứa đối tượng</div></a>
 			</div>
 		</div>
 		<div class="content">
+			<!-- Cách khởi tạo object -->
 			<div id="step1" class="step" >
 				<p style="margin: 0" class="cap">Cách khởi tạo object</p>
 				<p>Có 2 cách để khởi tạo:</p>
@@ -26,6 +28,7 @@
 				<p><b>Cach 2</b>. Sử dụng từ khóa <span>{}</span>:</p>
 				<p class="zone"><span>var</span> obj = <span>{}</span>;</p>
 			</div>
+			<!-- Tạo thuộc tính -->
 			<div id="step2" class="step">
 				<p class="cap">Tạo thuộc tính</p>
 				<p>Thuộc tính là những đặc điểm (có thể hiểu là biến) cần lưu trữ trong đối tượng.</p>
@@ -54,6 +57,7 @@
 					Conmeo.mat : "",;<br>
 					Conmeo.long : "";<br></p>
 			</div>
+			<!-- Từ khóa this -->
 			<div id="step3" class="step">
 				<p class="cap">Từ khóa this</p>
 				<p>Từ khóa <span>this</span> dùng để đại diện cho 1 đối tượng</p>
@@ -69,6 +73,7 @@
 				<p> - Từ khóa <span>this</span> của JavaScript được sử dụng để tham chiếu đến các đối tượng mà hàm (nơi mà <span>this</span> được sử dụng) bị ràng buộc.</p>
 				<p> - Từ khóa <span>this</span> không chỉ tham chiếu đến đối tượng, mà nó còn chứa giá trị của đối tượng đó</p>
 			</div>
+			<!-- Truy cập và gán giá trị -->
 			<div id="step4" class="step">
 				<p class="cap">Truy cập và gán giá trị</p>
 				<p><b>Có thể truy cập đến thuộc tính của Object theo 2 cách:</b></p>
@@ -106,7 +111,30 @@
 					};
 				</p>
 			</div>
+			<!-- Object Method -->
 			<div id="step5" class="step">
+				<div class="cap">
+					Object Methods
+				</div>
+				<p>
+					Object cũng có <span>methods</span><br>
+					<span>Methods</span> là các hành động có thể được thực hiện trên các Object.<br>
+					Nó có thể được đặt trong thuộc tính như các function.	
+				</p>
+				<p>ví dụ về <span>methods</span> trong Object</p>
+				<p class="zone">
+					var person = {<br>
+				    firstName: "John",<br>
+				    lastName : "Doe",<br>
+				    id       : 5566,<br>
+				    fullName : function() {<br>
+				        return this.firstName + " " +this.lastName;<br>
+				    }
+				};
+				</p>
+			</div>
+			<!-- Mảng chứa đối tượng - Đối tượng chứa đối tượng -->
+			<div id="step6" class="step">
 				<p class="cap">
 					Mảng chứa đối tượng - Đối tượng chứa đối tượng
 				</p>
