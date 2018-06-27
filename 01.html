@@ -2,29 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>function</title>
 </head>
 <body>
 <p id="demo"></p>
+<!--<button id="button" onclick="myFunction()" >click here</button>-->
 <script>
+    // function(hàm) trong javascript co tac dung gom code vao 1 khu vuc de xu ly va tai su dung.
+
     // tạo 1 function với 2 biến a1 a2,in ra màn hình phép nhân a1 x a2 rồi gán giá trị,sau đó cho ra kết quả.
-    // function myFunction(a1,a2) {
-    //     return a1 * a2
+    // document.getElementById("demo").innerHTML = myFunction(4,2);
+    // function myFunction(a,g) {
+    //     return a * g;
     // }
-    // document.getElementById("demo").innerHTML = myFunction(3,8);
+
 
     // tạo 1 hàm function mới ,tham số truyền vào là
     // function check_number(number){
     //     if (number % 2 == 0) {
-    //         alert(number + " số chẵn");
+    //         alert(number + " là "  + " số chẵn");
     //     }
     //     else {
-    //             alert(number + " số lẻ");
+    //             alert(number + " là" + " số lẻ");
     // }
     //     }
-    //     check_number(4);// 4 la so chan.
-    //     check_number(3); // 3 la so le.
-    //
+    //     // check_number(4);// 4 la so chan.
+    //     check_number(115); // 3 la so le.
+
     // check_number(4);
 
     // tạo biến x với tham số truyền vào là function với 2 giá trị 6 1,
@@ -51,19 +55,69 @@
     // var c = a + b;
     // function tong(a,b) {
     //     return a + b;
-    // }
+    // }return
     //     document.getElementById("demo").innerHTML = c;
 
+    // ham ko co return chi don thuan la lay ket qua phep toan.
+    // function tong(a, b)
+    // {
+    //     document.write('ket qua la : ' + (a + b));
+    // }
+    // var so1 = 10;
+    // var so2 = 32;
+    // tong(so1, so2);
 
     // tao function voi bien name,in ra man hinh gia tri cua "higgsup" + bien name
     // sau do gan gia tri "front-end" cho bien name
-    function myFunction(name) {
-        return "higgsup " + name;
-    }
-        document.getElementById("demo").innerHTML = myFunction("front-end");
+    // function myFunction(name) {
+    //     return "higgsup " + name;
+    // }
+    //     document.getElementById("demo").innerHTML = myFunction("front-end");
+
+    // giá trị mặc định của tham số 
+
+    // function showMessage(message)
+    // {
+    //     // Neu tham so ko dc truyen vao => gia tri cua no la rong;
+    //     // man hinh se dc hien thi thay the  'nothing right here.'
+    //     message = message || 'nothing right here <br/>';
+    //     document.write(message);
+    // }
+    //
+    // // TH 1: ko co tham so dc truyen vao
+    // showMessage();
+
+    // TH 2:  truyen vao tham so 'chao mung b den voi ....'
+    // showMessage('hello world  !');
+
+    //
+    // function myFunction(){
+    //     document.write("hello world !");
+    // }
+
+    // thay đổi dữ liệu của tham số
+    // th1: khi tham số là kiểu dữ liệu thông thườg;ta ko the thay doi gia tri cua tham so.
+    // function changeValue(a) {
+    //     a = 7;
+    // }
+    //     var a = 3;
+    // alert(a); // ket qua la 3
+    // changeValue(a); // thay doi gia tri cua bien a => gia tri cua tham so van ko doi
+    // alert(a);
 
 
-
+    // th2: khi tham so dang object
+    // function changeValue(obj)
+    // {
+    //     obj.value = 20;
+    // }
+    // var obj = {};
+    //
+    // console.log(obj); // obj có giá trị rỗng {}
+    //
+    // changeValue(obj);
+    //
+    // console.log(obj);
 
 </script>
 </body>
