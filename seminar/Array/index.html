@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array</title>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="container">
+		<div id="menu" class="big">
+			<p class="cap">Menu</p>
+			<div class="menu">
+				<a href="#step1"><div >Cach khai bao mang</div></a>
+				<a href="#step2"><div>Tham chieu den phan tu trong mang</div></a>
+				<a href="#step3"><div>Array vs Object</div></a>
+				<a href="#step4"><div>Phan tu cua array</div></a>
+				<a href="#step5"><div>Length property</div></a>
+				<a href="#step6"><div>Array methods</div></a>
+			</div>
+		</div>
+		<div class="content">
+			<!-- ach khai bao mang -->
+			<div id="step1" class="step" >
+				<p style="margin: 0" class="cap">Cach khai bao mang</p>
+				<p>Co 2 cach khai bao mang la :</p>
+				<p><b>Cach 1</b>. Khai bao bang dau <span>[]</span></p>
+				<p class="zone">var array = ["thang","dep","trai"]</p>
+				<p><b>Cach 2</b>. Sử dụng từ khóa <span>new Array()</span>:</p>
+				<p class="zone"><span>var</span> array = <span>new</span> Array();</p>
+				<p>Ca 2 cach deu giong nhau, nhung nen su dung cach 1 (array literal method).</p>
+			</div>
+			<!-- Tham chieu den phan tu trong mang -->
+			<div id="step2" class="step">
+				<p class="cap">Tham chieu den phan tu trong mang</p>
+				<p>Co rat nhieu cach tham chieu den phan tu trong mang nhu:</p>
+				<p><b>Gán:</b></p>
+				<p class="zone">
+					var name = thang[0];
+				</p>
+				<p><b>Sửa giá trị:</b></p>
+				<p class="zone">
+					thang[0] = "xau trai";</p>
+				<p><b>Tham chiếu đến cả array</b></p>
+				<p class="zone">
+					var meo = ["meo con","meo me","meo bo"];<br>
+					var cho = meo;
+				</p>
+				<p><b>Cách 2</b>. Sử dụng từ khóa <span>{}</span> và thêm thuộc tính ngay lúc khai báo:</p>
+				<p class="zone">
+						<span>var</span> Conmeo = <span>{</span><br>
+						    duoi : "",<br>
+						    tai : "",<br>
+						    mat : "",<br>
+						    long : ""<br>
+						<span>};</span></p>
+				<p><b>Cách 3</b>. Sử dụng từ khóa <span>{}</span> và thêm thuộc tính ngay sau đó:</p>
+				<p class="zone">
+						<span>var</span> Conmeo = <span>{};</span><br>
+					Conmeo.duoi : "",;<br>
+					Conmeo.tai : "",;<br>
+					Conmeo.mat : "",;<br>
+					Conmeo.long : "";<br></p>
+			</div>
+			<!-- Array vs Object -->
+			<div id="step3" class="step">
+				<p class="cap">Array vs Object</p>
+				<p>Array là  <span>một kiểu đặc biệt</span> của Object.</p>
+				<p>Toán tử <span>typeof</span> sẽ trả về <span>"object"</span> cho array</p>
+				<p>Array sử dụng <span>số</span> để tham chiếu đến các element:</p>
+				<p class="zone">
+						var cars = ["banh xe","vo lang"];
+						VD: cars[0];
+				</p>
+				<p>Còn <span>object</span> thì sử dụng name để tham chiếu:</p>
+				<p class="zone">
+					var a = {ten: 'thang'};<br>
+					a.ten;
+				</p>
+			</div>
+			<!-- Phan tu cua array -->
+			<div id="step4" class="step">
+				<p class="cap">Phan tu cua array</p>
+				<p>Bạn có thể có những biến khác nhau trên cùng 1 array như Object, function hay cả array:</p>
+				<p class="zone">
+					var array = [<br>
+						array[0] = Date.now;<br>
+						array[1] = myFunction;<br>
+						array[2] = myCars;<br>
+					]
+				</p>
+			</div>
+			<!-- Length property -->
+			<div id="step5" class="step">
+				<div class="cap">
+					Length property
+				</div>
+				<p><span>Length</span> cua array luon luon lon hon so lon nhat cua array index:</p>
+				<p class="zone">
+					var a = ["1","2","3"];<br>
+					a.length ==> //3 (array index thi se la 2);
+				</p>
+			</div>
+			<!-- Array methods -->
+			<div id="step6" class="step">
+				<p class="cap">
+					Array methods
+				</p>
+				<p>Mot so method hay dung cua array:</p>
+				<p class="zone">
+							Ham <span>toString</span> convert array sang String:<br>
+							var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+							fruits.<span>toString()</span>;<br>
+							==> Banana,Orange,Apple,Mango;
+				</p>
+				<p class="zone">
+					Ham <span>join()</span> cung se tra array ve string:<br>
+					var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+					fruits.<span>join(" * ")</span>;<br>
+					==> Banana * Orange * Apple * Mango;
+				</p>
+				<p class="zone">
+					Ham <span>pop()</span><br>
+					Remove phan tu cuoi cua array va return phan tu bi remove<br>
+				</p>
+				<p class="zone">
+					Ham <span>push()</span><br>
+					Add 1 phan tu vao cuoi cua array va return array length<br>
+				</p>
+			</div>
+		</div>
+		<div onclick="none()" id="none1" class="none">
+			HIDE
+		</div>
+		<div onclick="show()" style="display: none" id="none2" class="none">
+			SHOW
+		</div>
+	</div>
+	<script type="text/javascript">
+		function none() {
+			var x = document.getElementById('menu').style = "display: none";
+			var z = document.getElementById('none2').style = "display: block";
+			var y = document.getElementById('none1').style = "display: none";
+		}
+		function show() {
+			var x = document.getElementById('menu').style = "display: block";
+			var y = document.getElementById('none1').style = "display: block";
+			var z = document.getElementById('none2').style = "display: none";
+		}
+	</script>
+</body>
+</html>
