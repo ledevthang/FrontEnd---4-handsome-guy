@@ -3,6 +3,7 @@
 <head>
 	<title>Object la cai veo gi</title>
 	<link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
 </head>
 <body>
 	<div class="container">
@@ -12,18 +13,17 @@
 				<a href="#step1"><div >Cách khởi tạo object</div></a>
 				<a href="#step2"><div>Tạo thuộc tính</div></a>
 				<a href="#step3"><div>Từ khóa this</div></a>
-				<a href="#"><div>Object methods</div></a>
-				<a href="#"><div>Truy cập và gán giá trị</div></a>
-				<a href="#"><div>Mảng chứa đối tượng - Đối tượng chứa đối tượng</div></a>
+				<a href="#step4"><div>Truy cập và gán giá trị</div></a>
+				<a href="#step5"><div>Mảng chứa đối tượng - Đối tượng chứa đối tượng</div></a>
 			</div>
 		</div>
 		<div class="content">
 			<div id="step1" class="step" >
 				<p style="margin: 0" class="cap">Cách khởi tạo object</p>
-				<p>Co 2 cach de khoi tao:</p>
-				<p><b>Cach 1</b>. Su dung tu khoa <span>new Object()</span>:</p>
+				<p>Có 2 cách để khởi tạo:</p>
+				<p><b>Cach 1</b>. Sử dụng từ khóa <span>new Object()</span>:</p>
 				<p class="zone"><span>var</span> obj = <span>new</span> Object();</p>
-				<p><b>Cach 2</b>. Su dung tu khoa <span>{}</span>:</p>
+				<p><b>Cach 2</b>. Sử dụng từ khóa <span>{}</span>:</p>
 				<p class="zone"><span>var</span> obj = <span>{}</span>;</p>
 			</div>
 			<div id="step2" class="step">
@@ -46,7 +46,7 @@
 						    mat : "",<br>
 						    long : ""<br>
 						<span>};</span></p>
-				<p><b>Cách 3</b>. Sử dụng từ khóa <span>{}</span> và thêm thuộc tính ngay sau do:</p>
+				<p><b>Cách 3</b>. Sử dụng từ khóa <span>{}</span> và thêm thuộc tính ngay sau đó:</p>
 				<p class="zone">
 						<span>var</span> Conmeo = <span>{};</span><br>
 					Conmeo.duoi : "",;<br>
@@ -56,11 +56,87 @@
 			</div>
 			<div id="step3" class="step">
 				<p class="cap">Từ khóa this</p>
-				<p>Co 2 cach de khoi tao:</p>
-				<p><b>Cach 1</b>. Su dung tu khoa <span>new Object()</span>:</p>
-				<p class="zone"><span>var</span> obj = <span>new</span> Object();</p>
-				<p><b>Cach 2</b>. Su dung tu khoa <span>{}</span>:</p>
-				<p class="zone"><span>var</span> obj = <span>{}</span>;</p>
+				<p>Từ khóa <span>this</span> dùng để đại diện cho 1 đối tượng</p>
+				<p class="zone">
+						<span>var</span> Conmeo = <span>{};</span><br>
+					Conmeo.duoi : "dài",;<br>
+					Conmeo.tai : "to",;<br>
+					Conmeo.mat : "xanh",;<br>
+					Conmeo.long : "mượt";<br>
+					console.log('<span>this</span>.tai + " rat la thinh "')
+				</p>
+				<p> - Sau một thời gian phát triển thì file JS của bạn sẽ rất lớn và rất khó kiểm sát được các biến,để tránh bị nhầm lẫn chúng ta nên sử dụng từ khóa <span>this</span></p>
+				<p> - Từ khóa <span>this</span> của JavaScript được sử dụng để tham chiếu đến các đối tượng mà hàm (nơi mà <span>this</span> được sử dụng) bị ràng buộc.</p>
+				<p> - Từ khóa <span>this</span> không chỉ tham chiếu đến đối tượng, mà nó còn chứa giá trị của đối tượng đó</p>
+			</div>
+			<div id="step4" class="step">
+				<p class="cap">Truy cập và gán giá trị</p>
+				<p><b>Có thể truy cập đến thuộc tính của Object theo 2 cách:</b></p>
+				<p class="zone">
+					tenObject.tenThuoctinh
+				</p>
+				<p>hoặc</p>
+				<p class="zone">
+					tenObject["tenThuoctinh"]
+				</p>
+				<p><b>Gán giá trị</b></p>
+				<p class="zone">
+					tenObject.tenThuoctinh = "something"
+				</p>
+				<p>hoặc dùng this trong function</p>
+				<p class="zone">
+					var Comment = {<br>
+					  title : "",<br>
+					  addComment : function(){<br>
+					    this.title = "Tiêu đề bình luận";
+					  }
+					};
+				</p>
+				<p><b>Lấy giá trị cho biến</b></p>
+				<p class="zone">
+					var duoi = Conmeo.duoi;
+				</p>
+				<p>hoặc dùng <span>this</span></p>
+				<p class="zone">
+					var Comment = {<br>
+					  title : "",<br>
+					  addComment : function(){<br>
+					    var title = this.title;
+					  }
+					};
+				</p>
+			</div>
+			<div id="step5" class="step">
+				<p class="cap">
+					Mảng chứa đối tượng - Đối tượng chứa đối tượng
+				</p>
+				<p>Đối tượng chứa đối tượng</p>
+				<p class="zone">
+					var Comment = {<br>
+					  info : {<br>
+					    title : "",<br>
+					    content : "",<br>
+					    email : "",<br>
+					    fullname : ""
+					  }
+					};
+				</p>
+				<p>Mảng chứa đối tượng</p>
+				<p class="zone">
+					var Comment = [<span>{</span><br>
+					  title   : "",<br>
+					  content : "",<br>
+					  email   : "",<br>
+					  fullname : ""
+					<span>}</span>,
+					<span>{</span><br>
+					  title   : "",<br>
+					  content : "",<br>
+					  email   : "",<br>
+					  fullname : ""
+					<span>}</span>
+					];
+				</p>
 			</div>
 		</div>
 	</div>
