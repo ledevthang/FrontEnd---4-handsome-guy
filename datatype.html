@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>data type</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+	<div class="container">
+		<h1>DATATYPE</h1>
+		<div class="row border">
+			<div class="col-md-4">
+				<h2>number</h2>
+				<p>- thêm 1 số vào chuỗi js coi đó là chuỗi</p>
+				<p>-  tính từ trái sang phải.</p>
+				<h4>num + string = string</h4>
+				<p style="color:green;font-size: 20px;" id="demoNumber1" onclick="fc1()">1 + "volo"</p>
+				<script type="text/javascript">
+					function fc1 (){
+						var x = 1;
+						var demoNumber = x + "volo";
+						document.getElementById("demoNumber1").innerHTML = demoNumber;
+					};
+			
+				</script>
+			<!-- ======================================== -->
+
+				<h4>stringNumber - number = number</h4>
+				<p style="color:green ;font-size: 20px;" id="demoNumber2" onclick="fc2()">"2" - 1 </p>
+				<script type="text/javascript">
+					function fc2 (){
+						var demoNumber2 = "2" - 2;
+						document.getElementById("demoNumber2").innerHTML = demoNumber2;
+				};
+				</script>
+
+				<b>true = 1 ; false = 0; null = 0</b>
+				<h4>num + true = num + 1;</h4>
+				<p style="color:green ;font-size: 20px;" id="demoNumber3" onclick="fc3()"> 1 + true </p>
+
+				<script type="text/javascript">
+					function fc3 (){	
+						var demoNumber3 = 1 + true;
+						document.getElementById("demoNumber3").innerHTML = demoNumber3;
+				};
+				</script>
+
+			</div>
+			<div class="col-md-4">
+				<h2>string</h2>
+				<h4>stringNumber * true = string</h4>
+				<p style="color:green ;font-size: 20px;" id="demoNumber4" onclick="fc4()"> "2" * "true" </p>
+				<script type="text/javascript">
+					function fc4 (){	
+						var demoNumber4 = "2" + true;
+						document.getElementById("demoNumber4").innerHTML = demoNumber4;
+				};
+				</script>
+			</div>
+			<div class="col-md-4">
+				<h2>true false</h2>
+				<h4>true + number = number</h4>
+				<p style="color:green ;font-size: 20px;" id="demoNumber5" onclick="fc5()"> true + 3 </p>
+				<script type="text/javascript">
+					function fc5 (){	
+						var demoNumber5 =  true + 3;
+						document.getElementById("demoNumber5").innerHTML = demoNumber5;
+				};
+				</script>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
