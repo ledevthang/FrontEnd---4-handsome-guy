@@ -1,0 +1,162 @@
+ <!--SỰ KIỆN ONCLICK-->
+ <!--<!DOCTYPE html>-->
+ <!--<html>-->
+ <!--<body>-->
+ <!--<button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>-->
+ <!--<p id="demo"></p>-->
+ <!--</body>-->
+ <!--</html>-->
+
+ <!--SỰ KIỆN ONDOUBLE CLICK-->
+ <!--<!DOCTYPE html>-->
+ <!--<html>-->
+ <!--<body>-->
+ <!--<button ondblclick="myFunction()">double click here</button>-->
+ <!--<p id="demo"></p>-->
+ <!--<script>-->
+     <!--function myFunction() {-->
+         <!--document.getElementById("demo").innerHTML = "w3school.com thank you !";-->
+     <!--}-->
+ <!--</script>-->
+ <!--</body>-->
+ <!--</html>-->
+
+ <!--SỰ KIỆN ONSUBMIT-->
+ <!--<!DOCTYPE html>-->
+ <!--<html>-->
+ <!--<body>-->
+ <!--<p>sau khi nhap thong tin,hien thi 1 bang thong bao</p>-->
+ <!--<form action="" onsubmit="myFunction()">-->
+     <!--Enter name: <input type="text" name="fname">-->
+     <!--<input type="submit" value="Submit">-->
+ <!--</form>-->
+ <!--<script>-->
+     <!--function myFunction() {-->
+         <!--alert("vui long cho");-->
+     <!--}-->
+ <!--</script>-->
+ <!--</body>-->
+ <!--</html>-->
+
+ <!--SỰ KIỆN MOUSE OVER-->
+ <!--<html>-->
+ <!--<head>-->
+     <!--<script type="text/javascript">-->
+
+         <!--function over() {-->
+             <!--document.write ("Mouse Over");-->
+         <!--}-->
+         <!--function out() {-->
+             <!--document.write ("Mouse Out");-->
+         <!--}-->
+
+     <!--</script>-->
+ <!--</head>-->
+ <!--<body>-->
+
+ <!--<div onmouseover="over()">-->
+     <!--<h2> hoover here </h2>-->
+ <!--</div>-->
+ <!--</body>-->
+ <!--</html>-->
+
+ <!--SỰ KIỆN ONKEYUP ONKEYDOWN-->
+ <!--<html>-->
+ <!--<body>-->
+ <!--<script language="javascript">-->
+     <!--// tinh ket qua-->
+     <!--function tinh()-->
+     <!--{-->
+         <!--// 3 bang input-->
+         <!--var a = document.getElementById("a");-->
+         <!--var b = document.getElementById("b");-->
+         <!--var result = document.getElementById("result");-->
+
+         <!--// tong 2 bang dau tien-->
+         <!--var tong = parseInt(a.value) + parseInt(b.value);-->
+
+         <!--// Gán giá trị vào ô thứ ba-->
+         <!--// Phải kiểm tra tổng hai số này có bị lỗi hay không-->
+         <!--if (!isNaN(tong)){-->
+             <!--result.value = tong;-->
+         <!--}-->
+     <!--}-->
+ <!--</script>-->
+ <!--a: <input type="text" id="a" value="" onkeyup="tinh()"/>-->
+ <!--b: <input type="text" id="b" value="" onkeyup="tinh()"/>-->
+ <!--ket qua: <input type="text" id="result" value=""/>-->
+ <!--</body>-->
+ <!--</html>-->
+
+ SỰ KIỆN ONKEYDOWN-ONKEYUP
+ <!DOCTYPE html>
+ <html>
+ <body>
+ <input type="text" onkeydown="this.style.backgroundColor='white'" onkeyup="this.style.backgroundColor='blue'"
+        placeholder="nhap text tai day">
+ </body>
+ </html>
+
+ <!--SỰ KIỆN ONCOPY-->
+ <html>
+ <body>
+ <script language="javascript">
+     // Hàm show kết quả
+     function show_message()
+     {
+         alert("copy thanh cong");
+     }
+ </script>
+ <h3>copy this text</h3>
+ <div oncopy="show_message()">welcome to w3school.com </div>
+ </body>
+ </html>
+
+ <!--SỰ KIỆN ONCHANGE-->
+ <!--<!DOCTYPE html>-->
+ <!--<html>-->
+ <!--<body>-->
+ <!--<p>Select from table</p>-->
+
+ <!--<select id="mySelect" onchange="myFunction()">-->
+     <!--<option value="PHP">HTML & CSS-->
+     <!--<option value="ANDROID">Java core-->
+     <!--<option value="IOS">Swiff-->
+ <!--</select>-->
+
+ <!--<p>change your select</p>-->
+ <!--<p id="demo"></p>-->
+
+ <!--<script>-->
+     <!--function myFunction() {-->
+         <!--var x = document.getElementById("mySelect").value;-->
+         <!--document.getElementById("demo").innerHTML = "You selected: " + x;-->
+     <!--}-->
+ <!--</script>-->
+
+ <!--</body>-->
+ <!--</html>-->
+
+ <!--SỰ KIỆN ON FOCUS-->
+ <!--<!DOCTYPE html>-->
+ <!--<html>-->
+ <!--<body>-->
+
+ <!--Enter your name: <input type="text" onfocus="myFunction(this)">-->
+
+ <!--<p>khi focus dc kich hoat,mau nen button va mau text dc thay doi</p>-->
+
+ <!--<script>-->
+     <!--function myFunction(x) {-->
+         <!--x.style.color = "blue";-->
+         <!--x.style.background = "pink";-->
+     <!--}-->
+ <!--</script>-->
+
+ <!--</body>-->
+ <!--</html>-->
+
+
+
+
+
