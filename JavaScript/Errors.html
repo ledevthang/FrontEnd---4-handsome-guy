@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Errors</title>
+</head>
+<body>
+<p>Nhập một số trong khoảng từ 5 đến 10:</p>
+
+<input id="demo" type="text">
+<button type="button" onclick="myFunction()">Kiểm tra</button>
+<p id="main"></p>
+
+<script>
+    function myFunction() {
+        var message, x;
+        message = document.getElementById("main");
+        message.innerHTML = "";
+        x = document.getElementById("demo").value;
+
+        // Thử xem có lỗi hay không
+        // Nếu có lỗi, "quăng" lỗi ra
+        try {
+            if(x == "")  throw "Chưa nhập";
+            if(isNaN(x)) throw "Không phải số";
+            x = Number(x);
+            if(x < 5)    throw "Số nhỏ hơn yêu cầu";
+            if(x > 10)   throw "Số lớn hơn yêu cầu";
+        }
+        catch(err) {
+            message.innerHTML = err;   //Đưa ra xử lí với lỗi ( gán message cho biến )
+        }
+        finally {
+            document.getElementById("demo").value = "";    // Đưa ra xử lí sau cùng
+        }
+    }
+</script>
+</body>
+</html>

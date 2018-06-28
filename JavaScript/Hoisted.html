@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Hoisted</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <script>
+            /*Trường hợp 1*/
+
+            x = 5;
+            document.getElementById("demo1").innerHTML = x;
+            var x;
+
+            var y;
+            y = 5;
+            document.getElementById("demo2").innerHTML = y;
+
+            /* Trường hợp 2*/
+
+            var a = 10;
+            var b = 25;
+            document.getElementById("demo3").innerHTML = a + " " + b;
+
+            var A = 10;
+            document.getElementById("demo4").innerHTML = "Giá trị của A là: " + A
+            + "<br />" + "Giá trị của B là: " + B;
+            var B = 25;
+
+
+            var c = 10;
+            var d;
+            document.getElementById("demo5").innerHTML = c + "<br />" + d;
+            d = 20;
+    </script>
+</body>
+</html>
