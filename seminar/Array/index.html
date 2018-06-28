@@ -10,29 +10,29 @@
 		<div id="menu" class="big">
 			<p class="cap">Menu</p>
 			<div class="menu">
-				<a href="#step1"><div >Cach khai bao mang</div></a>
-				<a href="#step2"><div>Tham chieu den phan tu trong mang</div></a>
+				<a href="#step1"><div >Cách khai báo mảng</div></a>
+				<a href="#step2"><div>Tham chiếu đến phần tử</div></a>
 				<a href="#step3"><div>Array vs Object</div></a>
-				<a href="#step4"><div>Phan tu cua array</div></a>
+				<a href="#step4"><div>Phần tử của array</div></a>
 				<a href="#step5"><div>Length property</div></a>
 				<a href="#step6"><div>Array methods</div></a>
 			</div>
 		</div>
 		<div class="content">
-			<!-- ach khai bao mang -->
+			<!-- Cách khai báo mảng -->
 			<div id="step1" class="step" >
-				<p style="margin: 0" class="cap">Cach khai bao mang</p>
-				<p>Co 2 cach khai bao mang la :</p>
-				<p><b>Cach 1</b>. Khai bao bang dau <span>[]</span></p>
-				<p class="zone">var array = ["thang","dep","trai"]</p>
-				<p><b>Cach 2</b>. Sử dụng từ khóa <span>new Array()</span>:</p>
+				<p style="margin: 0" class="cap">Cách khai báo mảng</p>
+				<p>Có 2 cách khai báo mảng là :</p>
+				<p><b>Cách 1</b>. Khai báo bằng dấu <span>[]</span></p>
+				<p class="zone">var array = ["cho","meo","ca"]</p>
+				<p><b>Cách 2</b>. Sử dụng từ khóa <span>new Array()</span>:</p>
 				<p class="zone"><span>var</span> array = <span>new</span> Array();</p>
-				<p>Ca 2 cach deu giong nhau, nhung nen su dung cach 1 (array literal method).</p>
+				<p>Cả 2 cách đều giống nhau, nhưng nên sử dụng cách 1(array literal method).</p>
 			</div>
 			<!-- Tham chieu den phan tu trong mang -->
 			<div id="step2" class="step">
-				<p class="cap">Tham chieu den phan tu trong mang</p>
-				<p>Co rat nhieu cach tham chieu den phan tu trong mang nhu:</p>
+				<p class="cap">Tham chiếu đến phần tử trong mảng</p>
+				<p>Có rất nhiều cách tham chiếu đến phần tử trong mảng như:</p>
 				<p><b>Gán:</b></p>
 				<p class="zone">
 					var name = thang[0];
@@ -94,10 +94,10 @@
 				<div class="cap">
 					Length property
 				</div>
-				<p><span>Length</span> cua array luon luon lon hon so lon nhat cua array index:</p>
+				<p><span>Length</span> của array luôn luôn lớn hơn số lớn nhất của array index:</p>
 				<p class="zone">
 					var a = ["1","2","3"];<br>
-					a.length ==> //3 (array index thi se la 2);
+					a.length ==> //3 (array index thì sẽ là 2);
 				</p>
 			</div>
 			<!-- Array methods -->
@@ -105,50 +105,50 @@
 				<p class="cap">
 					Array methods
 				</p>
-				<p>Mot so method hay dung cua array:</p>
+				<p>Một số method hay dùng của array:</p>
 				<p class="zone">
-							Ham <span>toString</span> convert array sang String:<br>
+							Hàm <span>toString</span> convert array sang String:<br>
 							var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
 							fruits.<span>toString()</span>;<br>
 							==> Banana,Orange,Apple,Mango;
 				</p>
 				<p class="zone">
-					Ham <span>join()</span> cung se tra array ve string:<br>
+					Hàm <span>join()</span> cũng sẽ trả từ array về string:<br>
 					var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
 					fruits.<span>join(" * ")</span>;<br>
 					==> Banana * Orange * Apple * Mango;
 				</p>
 				<p class="zone">
-					Ham <span>pop()</span><br>
-					Remove phan tu cuoi cua array va return phan tu bi remove<br>
+					Hàm <span>pop()</span><br>
+					Remove phần tử cuối cùng của array và return phần tử bị remove đó.<br>
 				</p>
 				<p class="zone">
-					Ham <span>push()</span><br>
-					Add 1 phan tu vao vi tri cuoi cua array va return array length<br>
+					Hàm <span>push()</span><br>
+					Add 1 phần tử vào vị trí cuối cùng của array va return array length<br>
 				</p>
 				<p class="zone">
-					Ham <span>shift()</span><br>
-					Remove phan tu dau tien cua array va return phan tu bi remove<br>
+					Hàm <span>shift()</span><br>
+					Remove phần tử đầu tiên của array và return phần tử remove<br>
 				</p>
 				<p class="zone">
-					Ham <span>unshift()</span><br>
-					Add phan tu vao vi tri dau tien cua array va return phan tu bi remove<br>
+					Hàm <span>unshift()</span><br>
+					Add phần tử vào vị trí đầu tiên của array va return phần tử bị remove<br>
 				</p>
 				<p class="zone">
-					Ham <span>delete</span><br>
-					Xoa 1 phan tu va tra ve <span>undefined</span>.<br>
-					//phan tu se van xuat hien tai array nhung voi value la <span>undefined</span>.
+					Hàm <span>delete</span><br>
+					Xóa 1 phần tử và trả về <span>undefined</span>.<br>
+					//phần tử vẫn sẽ xuất hiện tại array nhưng với value là <span>undefined</span>.
 				</p>
 				<p class="zone">
-					Ham <span>splice()</span><br>
-					Remove phan tu va tra ve array<br>
+					Hàm <span>splice()</span><br>
+					Remove phần tử và trả về array<br>
 					var a = ["1","2","3","4"];<br>
 					a.splice(2,1) ==> //["1","2","4"];<br>
 					2 : là vị trí bắt đầu;<br>
 					1 : là số phần tử remove;
 				</p>
 				<p class="zone">
-					Ham <span>concat()</span><br>
+					Hàm <span>concat()</span><br>
 					Merge 2 array<br>
 					var array1 = ["1","2","3"];<br>
 					var array2 = ["4","5","6"];<br>
@@ -164,10 +164,10 @@
 					==> return merge2 = ["1","2","3","10"];
 				</p>
 				<p class="zone">
-					Ham <span>splice()</span><br>
-					"Thái" cac phan tu bat dau tu vi tri duoc chon va se <span>tra ve array moi</span>:<br>
+					Hàm <span>splice()</span><br>
+					"Thái" các phần tử bắt đầu từ vị trí được chọn và <span>trả về array mới</span>:<br>
 					var a = ["1","2","3","4"];<br>
-					var x = a.slice(1) ==> cat tu vi tri index 1, return x = [2","3","4"];
+					var x = a.slice(1) ==> cắt từ vị trí index 1, return x = [2","3","4"];
 				</p>
 				<p>Thay đổi phần tử:</p>
 				<p class="zone">

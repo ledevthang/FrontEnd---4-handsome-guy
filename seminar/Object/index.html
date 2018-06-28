@@ -7,7 +7,7 @@
 </head>
 <body>
 	<div class="container">
-		<div class="big">
+		<div class="big" id="menu">
 			<p class="cap">Menu</p>
 			<div class="menu">
 				<a href="#step1"><div >Cách khởi tạo object</div></a>
@@ -169,6 +169,24 @@
 				</p>
 			</div>
 		</div>
+		<div onclick="none()" id="none1" class="none">
+			HIDE
+		</div>
+		<div onclick="show()" style="display: none" id="none2" class="none">
+			SHOW
+		</div>
 	</div>
+	<script type="text/javascript">
+		function none() {
+			var x = document.getElementById('menu').style = "display: none";
+			var z = document.getElementById('none2').style = "display: block";
+			var y = document.getElementById('none1').style = "display: none";
+		}
+		function show() {
+			var x = document.getElementById('menu').style = "display: block";
+			var y = document.getElementById('none1').style = "display: block";
+			var z = document.getElementById('none2').style = "display: none";
+		}
+	</script>
 </body>
 </html>
