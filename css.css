@@ -2,3 +2,13 @@
 	box-sizing: border-box;
 }
 
+.trinh img{
+	max-width: 50px;
+}
+.img img{
+	max-width: 100%;
+}
+.img{
+	margin: 10px 0;
+}
+

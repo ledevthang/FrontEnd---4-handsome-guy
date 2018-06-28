@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="js.js">
+    <title>Regular Expressions</title>
+</head>
+<body>
+<div class="container text-center">
+    <span style="font-size:50px; ">/pattent/modifiers</span>
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <h1>Modifiers</h1>
+            <strong>case-insensitive phân biệt chữ hoa chữ thường</strong>
+            <p><i style="font-size: 30px;">i</i></p>
+            <strong>multiline tìm kiếm đa dòng</strong>
+            <p><i style="font-size: 30px;">m</i></p>
+            <strong>global tìm kiến toàn cục</strong>
+            <p><i style="font-size: 30px;">g</i></p>
+            <strong>unicode</strong>
+            <p><i style="font-size: 30px;">u</i></p>
+            <h1>RegExp Object Properties</h1>
+
+
+            <h1>RegExp Object Methods</h1>
+        </div>
+        <div class="col-md-6 text-center">
+            <h1>Pattent</h1>
+            <div class="brackets">
+                <strong>Brackets</strong>
+                <!--===========================-->
+                <p><b>[abc]</b> => tìm a hoặc b hoặc c</p>
+                <div class="img">
+                    <img src="1.PNG" alt="">
+                </div>
+                <div class="trinh text-center" onclick="bfc1()"><a href="#">
+                        <img src="em-trinh.jpg" alt=""></a>
+                </div>
+                <p id="bdemo">Bấm vào em</p>
+                <script>
+                    function bfc1() {
+                        var bstr = "em la  Trinh day";
+                        var bpatt1 = /[ei]/g;
+                        var bresult = bstr.match(bpatt1);
+                        document.getElementById("bdemo").innerHTML = bresult;
+                    }
+                </script>
+                <!--==========================-->
+                <h2>[0-9] ~ /d tìm số</h2>
+                <div class="img">
+                    <img src="2.PNG" alt="">
+                </div>
+                <div class="trinh text-center" onclick="bfc2()"><a href="#">
+                    <img src="em-trinh.jpg" alt=""></a></div>
+                <p id="bdemo2">Bấm vào em</p>
+                <script>
+                    function bfc2() {
+                        var bstr = "em la  Trinh 56 day";
+                        var bpatt1 = /[0-9]/g;
+                        var bresult = bstr.match(bpatt1);
+                        document.getElementById("bdemo2").innerHTML = bresult;
+                    }
+                </script>
+                <!--============================-->
+                <h2>(x|y) giống [x|y]</h2>
+                <div class="img">
+                    <img src="3.PNG" alt="">
+                </div>
+                <div class="trinh text-center" onclick="bfc3()"><a href="#">
+                    <img src="em-trinh.jpg" alt=""></a></div>
+                <p id="bdemo3">Bấm vào em</p>
+                <script>
+                    function bfc3() {
+                        var bstr = "laị la em  Trinh 56 day";
+                        var bpatt1 = /(l|5)/g;
+                        var bresult = bstr.match(bpatt1);
+                        document.getElementById("bdemo3").innerHTML = bresult;
+                    }
+                </script>
+            </div>
+            <h1 style="margin-top: 100px;">Metacharacter</h1>
+            <h3>\w  : word</h3>
+            <div class="img">
+                <img src="4.PNG" alt="">
+            </div>
+            <p>\W ngược lại</p>
+            <h3>\d : tìm sô number</h3>
+            <div class="img">
+                <img src="6.PNG" alt="">
+            </div>
+            <h3>\s : space  tìm khoảng trắng</h3>
+            <h3>\S : tìm nhưng thứ không phải khoảng trắng</h3>
+            <div class="img">
+                <img src="7.PNG" alt="">
+            </div>
+            <h3>\0 : khớp với ký tự NULL (U+0000)</h3>
+        </div>
+    </div>
+</div>
+</body>
+</html>
